@@ -34,7 +34,12 @@ public class Factorial {
 		*/
 
 		//YOUR CODE STARTS HERE
-
+		 if (scanner.hasNextInt()) {
+			 int num = scanner.nextInt();
+			 if (0 < num && num < 11) {
+				 return num;
+			 }
+		 }
 		return -1;
 
 		//YOUR CODE ENDS HERE
