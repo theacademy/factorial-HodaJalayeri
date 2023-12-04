@@ -59,7 +59,9 @@ public class Factorial {
 		int result = 1;
 		//YOUR CODE STARTS HERE
 
- 
+		 for (int i = 2; i <= num; i++) {
+			 result = result * i;
+		 }
 
 		//YOUR CODE ENDS HERE
 		this.printStream.print("The Factorial is: " + result);		
@@ -70,11 +72,12 @@ public class Factorial {
 		 /*
 		 Do not change this method.
 		 */
-		 	
-		 int input = this.isInputNumberValid();
-		 if(input != -1)
-		 {
-			 calculateFactorial(input);
+
+		 int num = isInputNumberValid();
+		 if ( num != -1) {
+			 calculateFactorial(num);
+		 } else {
+			 printStream.print("Invalid entry. Please enter an integer between 1 and 10, inclusive.");
 		 }
 		 
 	 }
